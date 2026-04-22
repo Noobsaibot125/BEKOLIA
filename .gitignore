@@ -35,4 +35,5 @@ yarn-error.log*
 Thumbs.db
 
 # Backend specific
+Backend/
 Backend/uploads/
