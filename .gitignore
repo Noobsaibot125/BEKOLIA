@@ -35,5 +35,11 @@ yarn-error.log*
 Thumbs.db
 
 # Backend specific
-Backend/
+# Backend/  <-- Removed this to allow deployment
+Backend/node_modules/
+Backend/dist/
+Backend/.env
 Backend/uploads/
+Backend/db/*.db
+Backend/db/*.db-journal
+Backend/db/*.db-wal
