@@ -248,7 +248,7 @@ export default function Home() {
             >
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <video autoPlay muted loop playsInline className="w-full h-80 object-cover">
-                  <source src="/images/Vidéo_3.mov" type="video/mp4" />
+                  <source src="/images/Vidéo_3.mp4" type="video/mp4" />
                 </video>
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/50 to-transparent" />
               </div>
