@@ -8,22 +8,21 @@ import { FaPlay, FaImage, FaPhone, FaWhatsapp } from 'react-icons/fa';
 const PHONE = '+225 07 19 00 87 66';
 const WHATSAPP = '2250719008766';
 
-// Vidéos disponibles dans le dossier Frontend/Images
 const mediaItems = [
-  { type: 'video', src: '/images/Vidéo.mov', thumb: null, title: 'Intervention terrain – Fumigation', category: 'fumigation' },
-  { type: 'video', src: '/images/Vidéo_1.mov', thumb: null, title: 'Traitement anti-nuisibles', category: 'traitement' },
-  { type: 'video', src: '/images/Vidéo_2.mov', thumb: null, title: 'Brumisation professionnelle', category: 'brumisation' },
-  { type: 'video', src: '/images/Vidéo_3.mov', thumb: null, title: 'Désinsectisation bureau', category: 'desinsectisation' },
-  { type: 'video', src: '/images/Vidéo_4.mov', thumb: null, title: 'Traitement moustiques', category: 'traitement' },
-  { type: 'video', src: '/images/Vidéo_5.mov', thumb: null, title: 'Dératisation professionnelle', category: 'deratisation' },
-  { type: 'video', src: '/images/Vidéo_6.mov', thumb: null, title: 'Fumigation entrepôt', category: 'fumigation' },
-  { type: 'video', src: '/images/Vidéo_7.mov', thumb: null, title: 'Assainissement locaux', category: 'assainissement' },
-  { type: 'video', src: '/images/Vidéo_8.mov', thumb: null, title: 'Intervention résidentielle', category: 'traitement' },
-  { type: 'video', src: '/images/Vidéo_9.mov', thumb: null, title: 'Traitement cafards', category: 'desinsectisation' },
-  { type: 'video', src: '/images/Vidéo_10.mov', thumb: null, title: 'Pulvérisation professionnelle', category: 'traitement' },
-  { type: 'video', src: '/images/Vidéo_11.mov', thumb: null, title: 'Protection locaux commerciaux', category: 'traitement' },
-  { type: 'video', src: '/images/Vidéo_12.mov', thumb: null, title: 'Traitement termites', category: 'deratisation' },
-  { type: 'video', src: '/images/Vidéo_13.mov', thumb: null, title: 'Intervention d\'urgence', category: 'fumigation' },
+  { type: 'video', src: '/images/Vidéo.mp4', title: 'Intervention terrain – Fumigation', category: 'fumigation' },
+  { type: 'video', src: '/images/Vidéo_1.mp4', title: 'Traitement anti-nuisibles', category: 'traitement' },
+  { type: 'video', src: '/images/Vidéo_2.mp4', title: 'Brumisation professionnelle', category: 'brumisation' },
+  { type: 'video', src: '/images/Vidéo_3.mp4', title: 'Désinsectisation bureau', category: 'desinsectisation' },
+  { type: 'video', src: '/images/Vidéo_4.mp4', title: 'Traitement moustiques', category: 'traitement' },
+  { type: 'video', src: '/images/Vidéo_5.mp4', title: 'Dératisation professionnelle', category: 'deratisation' },
+  { type: 'video', src: '/images/Vidéo_6.mp4', title: 'Fumigation entrepôt', category: 'fumigation' },
+  { type: 'video', src: '/images/Vidéo_7.mp4', title: 'Assainissement locaux', category: 'assainissement' },
+  { type: 'video', src: '/images/Vidéo_8.mp4', title: 'Intervention résidentielle', category: 'traitement' },
+  { type: 'video', src: '/images/Vidéo_9.mp4', title: 'Traitement cafards', category: 'desinsectisation' },
+  { type: 'video', src: '/images/Vidéo_10.mp4', title: 'Pulvérisation professionnelle', category: 'traitement' },
+  { type: 'video', src: '/images/Vidéo_11.mp4', title: 'Protection locaux commerciaux', category: 'traitement' },
+  { type: 'video', src: '/images/Vidéo_12.mp4', title: 'Traitement termites', category: 'deratisation' },
+  { type: 'video', src: '/images/Vidéo_13.mp4', title: 'Intervention d\'urgence', category: 'fumigation' },
   { type: 'image', src: '/images/image1.jpeg', title: 'Traitement professionnel', category: 'traitement' },
   { type: 'image', src: '/images/image_1.jpeg', title: 'Intervention terrain', category: 'traitement' },
 ];
