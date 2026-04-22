@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(find \"/c/Users/THEWAYNE/Documents/BEKOLIA/Frontend/src\" -type f \\\\\\( -name \"*.jsx\" -o -name \"*.css\" \\\\\\) -exec sed -i 's/green-DEFAULT/green-600/g' {} \\\\;)",
+      "Bash(taskkill /F /IM node.exe)",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "Bash(npx vite *)",
+      "Bash(node -e ' *)",
+      "Bash(netstat -ano)",
+      "Bash(tasklist /fi \"PID eq 12536\")",
+      "Bash(taskkill /F /PID 12536)",
+      "Bash(taskkill //F //PID 12536)",
+      "Bash(taskkill //F //PID 16200)",
+      "Bash(taskkill //F //IM node.exe)"
+    ]
+  }
+}

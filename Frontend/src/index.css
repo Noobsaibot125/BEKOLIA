@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:wght@400;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { @apply box-border; }
+  html { @apply scroll-smooth; }
+  body {
+    @apply font-sans text-gray-800 bg-white antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', system-ui, sans-serif;
+    @apply font-bold;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-primary text-white font-semibold px-6 py-3 rounded-lg
+    hover:bg-primary-700 active:scale-95 transition-all duration-200 shadow-md hover:shadow-premium;
+  }
+  .btn-green {
+    @apply inline-flex items-center gap-2 bg-green-600 text-white font-semibold px-6 py-3 rounded-lg
+    hover:bg-green-dark active:scale-95 transition-all duration-200 shadow-md hover:shadow-green;
+  }
+  .btn-outline {
+    @apply inline-flex items-center gap-2 border-2 border-white text-white font-semibold px-6 py-3 rounded-lg
+    hover:bg-white hover:text-primary active:scale-95 transition-all duration-200;
+  }
+  .btn-whatsapp {
+    @apply inline-flex items-center gap-2 bg-[#25d366] text-white font-semibold px-6 py-3 rounded-lg
+    hover:bg-[#1da851] active:scale-95 transition-all duration-200 shadow-md;
+  }
+  .section-title {
+    @apply text-3xl md:text-4xl font-display font-black text-primary text-center mb-4;
+  }
+  .section-subtitle {
+    @apply text-gray-500 text-center max-w-2xl mx-auto mb-12 text-lg;
+  }
+  .card {
+    @apply bg-white rounded-2xl shadow-lg hover:shadow-premium transition-all duration-300 hover:-translate-y-1;
+  }
+  .badge {
+    @apply inline-flex items-center gap-1 bg-green-50 text-green-600 text-sm font-semibold px-3 py-1 rounded-full;
+  }
+  .input-field {
+    @apply w-full border border-gray-200 rounded-xl px-4 py-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-400 focus:border-transparent transition-all;
+  }
+  .nav-link {
+    @apply text-gray-700 hover:text-primary font-medium transition-colors duration-200 relative
+    after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-primary
+    after:transition-all after:duration-300 hover:after:w-full;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-green-600 bg-clip-text text-transparent;
+  }
+  .bg-premium {
+    background: linear-gradient(135deg, #0f2952 0%, #1a4080 50%, #0f2952 100%);
+  }
+  .glass {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar { display: none; }
+}
+
+/* Animations personnalisées */
+.animate-on-scroll { opacity: 0; transform: translateY(20px); transition: all 0.6s ease; }
+.animate-on-scroll.visible { opacity: 1; transform: translateY(0); }
+
+/* WhatsApp floating button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 100px;
+  right: 24px;
+  z-index: 999;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Swiper custom */
+.swiper-pagination-bullet-active { background: #0f2952 !important; }
+.swiper-button-next, .swiper-button-prev { color: #0f2952 !important; }
+
+/* Hero CSS animé premium */
+.hero-animated-bg {
+  background: linear-gradient(135deg, #051535 0%, #0f2952 30%, #0a3d6b 60%, #0f2952 100%);
+  background-size: 400% 400%;
+  animation: gradientShift 12s ease infinite;
+}
+
+.hero-grid-overlay {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #0f2952; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #1a4080; }
+
+/* Section transitions */
+section { overflow: hidden; }
