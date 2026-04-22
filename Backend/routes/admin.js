@@ -126,6 +126,13 @@ router.post('/gallery', upload.single('file'), (req, res) => {
   res.status(201).json({ id: result.lastInsertRowid, filename: req.file.filename, message: 'Fichier uploadé.' });
 });
 
+router.put('/gallery/:id', (req, res) => {
+  const { title, category } = req.body;
+  const db = getDb();
+  db.prepare('UPDATE gallery SET title = ?, category = ? WHERE id = ?').run(title || '', category || 'intervention', req.params.id);
+  res.json({ message: 'Galerie mise à jour.' });
+});
+
 router.delete('/gallery/:id', (req, res) => {
   const db = getDb();
   const image = db.prepare('SELECT * FROM gallery WHERE id = ?').get(req.params.id);

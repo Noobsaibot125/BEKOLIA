@@ -125,12 +125,21 @@ function initDb() {
     ['company_name', 'BEKOLIA'],
     ['company_tagline', 'Expert en Fumigation et Brumisation'],
     ['company_phone', '+225 07 19 00 87 66'],
-    ['company_whatsapp', '+2250719008766'],
+    ['company_whatsapp', '2250719008766'],
     ['company_email', 'contact@bekolia.ci'],
     ['company_address', 'Abidjan, Côte d\'Ivoire'],
     ['company_hours', '7j/7 - 24h/24'],
     ['hero_title', 'Élimination Rapide des Nuisibles en Côte d\'Ivoire'],
     ['hero_subtitle', 'Experts en fumigation, brumisation et traitement anti-nuisibles. Intervention rapide 7j/7. Résultats garantis.'],
+    ['hero_badge', 'Service N°1 en Côte d\'Ivoire – Disponible 7j/7'],
+    ['about_title', 'L\'Expert de Confiance pour votre Sécurité'],
+    ['about_text', 'Depuis 10 ans, BEKOLIA protège les familles et entreprises d\'Abidjan contre les nuisibles. Notre équipe de professionnels qualifiés utilise des méthodes éprouvées et des produits homologués pour des résultats durables.'],
+    ['stat_clients', '2500'],
+    ['stat_years', '10'],
+    ['stat_satisfaction', '98'],
+    ['stat_interventions', '24'],
+    ['cta_title', 'Besoin d\'une Désinsectisation Immédiate ?'],
+    ['cta_subtitle', 'Nos techniciens interviennent chez vous en moins de 60 minutes. Éliminez définitivement les nuisibles avec nos solutions garanties.'],
   ];
   const insertSetting = database.prepare('INSERT OR IGNORE INTO settings (key, value) VALUES (?, ?)');
   defaultSettings.forEach(([key, value]) => insertSetting.run(key, value));
